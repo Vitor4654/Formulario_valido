@@ -77,11 +77,11 @@ function validateForm(event) {
 const nomeCookie = getCookie('nome');
 const idCookie = getCookie('id');
   
-if (nomeCookie) {
+if (nomeCookie !== null) {
     document.getElementById('nome').value = nomeCookie;
 }
   
-if (idCookie) {
+if (idCookie !== null) {
     document.getElementById('id').value = idCookie;
 }
   
